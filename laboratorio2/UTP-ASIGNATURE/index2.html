@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados</title>
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.problema {
+    margin-bottom: 10px;
+}
+
+.problema h2 {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="number"],
+input[type="text"] {
+    width: 10%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.resultado {
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+</style>
+<body>
+    <p>¿Qué es Javascript y en qué se asemeja a Java?
+        <br>
+      JavaScript es un lenguaje de programación interpretado que se utiliza principalmente para crear interacciones dinámicas en páginas web.
+      <br>
+       Se asemejan en que : Java es versátil y se utiliza en diversas aplicaciones, mientras que JavaScript está enfocado en la web y se ejecuta en navegadores
+         
+      </p>
+      <p></p>
+  
+  <samp>-----------------------------------------------</samp>
+    <h3>Resultados de las Operaciones</h3>
+
+    <!-- Problema 1: Calcular Operaciones -->
+    <div class="problema">
+        <h3>Problema 1: Operacione Multiples</h3>
+        <label for="num1">Número 1:</label>
+        <input type="number" id="num1">
+        <label for="num2">Número 2:</label>
+        <input type="number" id="num2">
+        <button onclick="calcularOperaciones()">Calcular</button>
+        <div id="operaciones" class="resultado"></div>
+    </div>
+
+    <!-- Problema 2: Concatenar Textos -->
+    <div class="problema">
+        <h3>Problema 2: Concatenar Textos</h3>
+        <label for="str1">Texto 1:</label>
+        <input type="text" id="str1">
+        <label for="str2">Texto 2:</label>
+        <input type="text" id="str2">
+        <button onclick="concatenar()">Concatenar</button>
+        <div id="concatenacion" class="resultado"></div>
+    </div>
+
+    <!-- Problema 3: Tipo de Dato -->
+    <div class="problema">
+        <h3>Problema 3: Tipo de Dato</h3>
+        <label for="const1">Constante 1:</label>
+        <input type="text" id="const1">
+        <label for="const2">Constante 2:</label>
+        <input type="text" id="const2">
+        <button onclick="tipoDato()">Ver Tipo de Dato</button>
+        <div id="tiposDatos" class="resultado"></div>
+    </div>
+
+    <!-- Problema 4: Crear Objeto -->
+    <div class="problema">
+        <h3>Problema 4: Crear Objeto</h3>
+        <button onclick="crearObjeto()">Crear Objeto</button>
+        <div id="objeto" class="resultado"></div>
+    </div>
+
+    <!-- Problema 5: Sumar Múltiplos -->
+    <div class="problema">
+        <h3>Problema 5: Sumar Múltiplos</h3>
+        <label for="numeroMultiplos">Número:</label>
+        <input type="number" id="numeroMultiplos">
+        <button onclick="sumarMultiplos()">Sumar Múltiplos</button>
+        <div id="sumaMultiplos" class="resultado"></div>
+    </div>
+
+    <script src="index2.js"></script>
+</body>
+</html>
